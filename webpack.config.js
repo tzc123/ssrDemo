@@ -17,15 +17,10 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: ["env", "react"]
+          presets: ["react"]
         }
       }
     ]
   },
-  plugins: [
-    new webpack.DefinePlugin({
-      "process.env.NODE_ENV": '"production"'
-    })
-  ],
   target: 'node'
 }
